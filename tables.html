@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Directory</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 64px 24px;
+            color: #1d2939;
+            background: #f3f6fb;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            width: min(100%, 850px);
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            color: #182230;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            letter-spacing: -0.04em;
+        }
+
+        .description {
+            margin: 0 0 28px;
+            color: #667085;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            border: 1px solid #e4e7ec;
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0 12px 30px rgb(16 24 40 / 8%);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        caption {
+            padding: 18px 20px;
+            color: #344054;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        thead {
+            background: #eef2ff;
+            color: #3446a3;
+        }
+
+        th,
+        td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eaecf0;
+        }
+
+        th {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        tbody tr:hover {
+            background: #f8f9ff;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                padding: 40px 16px;
+            }
+
+            th,
+            td {
+                padding: 13px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>People Directory</h1>
+        <p class="description">A simple overview of people and their details.</p>
+        <div class="table-container">
+            <table>
+                <caption>Directory details</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Sr No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane</td>
+                        <td>30</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

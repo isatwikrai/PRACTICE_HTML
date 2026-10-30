@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Websites</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 64px 24px;
+            color: #172033;
+            background:
+                radial-gradient(ellipse at 12% 8%, rgb(91 124 250 / 12%), transparent 32rem),
+                #f5f7fc;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        main {
+            width: min(100%, 960px);
+            margin: 0 auto;
+        }
+
+        .intro {
+            margin-bottom: 36px;
+            text-align: center;
+        }
+
+        .intro h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 5vw, 3rem);
+            letter-spacing: -0.06em;
+        }
+
+        .intro p {
+            margin: 0;
+            color: #68738a;
+            font-size: 1.05rem;
+        }
+
+        .website-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 18px;
+        }
+
+        .website-card {
+            min-height: 112px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            border: 1px solid #e8ebf3;
+            border-radius: 18px;
+            background: rgb(255 255 255 / 90%);
+            box-shadow: 0 8px 24px rgb(34 48 78 / 5%);
+            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+        }
+
+        .website-card:hover {
+            transform: translateY(-4px);
+            border-color: #d7ddf0;
+            box-shadow: 0 14px 30px rgb(34 48 78 / 10%);
+        }
+
+        .website-card img {
+            width: 52px;
+            height: 52px;
+            flex: 0 0 52px;
+            object-fit: contain;
+            border-radius: 12px;
+            background: #f7f8fb;
+        }
+
+        .website-card h2 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 650;
+        }
+
+        .website-card a {
+            color: #69758b;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .website-card a:hover {
+            color: #3659d9;
+        }
+
+        .website-card a:focus-visible {
+            border-radius: 3px;
+            outline: 3px solid #91a7ff;
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                padding: 40px 18px;
+            }
+
+            .intro {
+                margin-bottom: 26px;
+            }
+
+            .website-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="intro">
+            <h1>Popular websites</h1>
+            <p>Your quick links to the sites you use every day.</p>
+        </header>
+        <section class="website-grid" aria-label="Popular websites">
+            <article class="website-card">
+                <img src="https://i.pinimg.com/736x/b1/e0/f9/b1e0f9aeec02c94376fbb4cedb6487b1.jpg" alt="" width="50"
+                    height="50">
+                <div>
+                    <h2>Google</h2><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Visit
+                        Google</a>
+                </div>
+            </article>
+            <article class="website-card">
+                <img src="https://i.pinimg.com/736x/ab/96/4b/ab964bcf79cbc2d86b15a9e2efe05ffa.jpg" alt="" width="50"
+                    height="50">
+                <div>
+                    <h2>Facebook</h2><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Visit
+                        Facebook</a>
+                </div>
+            </article>
+            <article class="website-card">
+                <img src="https://i.pinimg.com/1200x/91/8b/20/918b20dc0aa716e09fd0a58f9dd8e720.jpg" alt="" width="50"
+                    height="50">
+                <div>
+                    <h2>Twitter</h2><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">Visit
+                        Twitter</a>
+                </div>
+            </article>
+            <article class="website-card">
+                <img src="https://i.pinimg.com/736x/21/76/02/2176022f91e480c1a0d8cc36967f6daa.jpg" alt="" width="50"
+                    height="50">
+                <div>
+                    <h2>Instagram</h2><a href="https://www.instagram.com/" target="_blank"
+                        rel="noopener noreferrer">Visit Instagram</a>
+                </div>
+            </article>
+            <article class="website-card">
+                <img src="https://i.pinimg.com/1200x/44/8d/93/448d931223f2a18fa99c064a72409003.jpg" alt="" width="50"
+                    height="50">
+                <div>
+                    <h2>YouTube</h2><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Visit
+                        YouTube</a>
+                </div>
+            </article>
+            <article class="website-card">
+                <img src="https://i.pinimg.com/736x/6c/41/53/6c41531c905f8c6c4b4c984cc143e0cf.jpg" alt="" width="50"
+                    height="50">
+                <div>
+                    <h2>LinkedIn</h2><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Visit
+                        LinkedIn</a>
+                </div>
+            </article>
+            <article class="website-card">
+                <img src="https://i.pinimg.com/1200x/fe/7e/de/fe7ede33aa120442cd743430ad8c4c96.jpg" alt="" width="50"
+                    height="50">
+                <div>
+                    <h2>Wikipedia</h2><a href="https://www.wikipedia.org/" target="_blank"
+                        rel="noopener noreferrer">Visit Wikipedia</a>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
